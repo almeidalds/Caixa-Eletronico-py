@@ -1,5 +1,6 @@
 import historico
 
+# Saldo inicial de exemplo. Em um sistema real, isso seria armazenado em um banco de dados.
 saldo = 4261.00
 
 

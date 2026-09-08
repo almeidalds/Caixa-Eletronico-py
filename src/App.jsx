@@ -59,12 +59,10 @@ function App() {
     <main className="atm-page">
       <header className="atm-header">
         <div className="brand"><span className="brand-symbol">⌁</span><div><strong>CAIXA</strong><small>eletrônico</small></div></div>
-        <div className="header-meta"><span className="online-dot" /> Sistema online <b>07 SET 2026</b></div>
       </header>
       <section className="atm-device">
-        <div className="device-top"><span>ATENDIMENTO DIGITAL</span><span className="security"><i /> CONEXÃO SEGURA</span></div>
         <div className="screen">
-          <div className="screen-heading"><div><p className="kicker">BEM-VINDA, GABRIELA</p><h1>{operacao ? tituloOperacao : 'Como podemos ajudar?'}</h1></div><span className="screen-step">{operacao ? '02 / 02' : '01 / 02'}</span></div>
+          <div className="screen-heading"><div><p className="kicker">BEM-VINDA, HYRUM</p><h1>{operacao ? tituloOperacao : 'Como podemos ajudar?'}</h1></div><span className="screen-step">{operacao ? '02 / 02' : '01 / 02'}</span></div>
           {!operacao ? <>
             <div className="balance-strip"><div><span>Saldo disponível</span><strong>{carregando ? 'Carregando...' : dinheiro(estado.saldo)}</strong></div><span className="balance-icon">$</span></div>
             <p className="instruction">Selecione uma opção para continuar</p>
